@@ -137,7 +137,7 @@ h3 {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 768px ) {
+@media only screen and (min-width: 1024px ) {
     .mobile-bg {
         display: none;
     }
@@ -149,29 +149,29 @@ h3 {
     .card {
         top: 50%;
         overflow: hidden;
-        min-height: 500px;
-        max-width: 950px;
+        height: 500px;
+        width: 950px;
     }
 
     #desktop-illustration-box {
         display: initial;
         z-index: 2;
         position: absolute;
-        top: 44%;
-        left: 19%;
-        /* transform: translate(-50%, -50%); */
-        animation: box-up 2s linear 2s infinite;
+        top: 50%;
+        left: 50%;
+        transform: translate(calc(-50% - 475px), calc(-50% + 40px));
+        animation: box-up 2s linear infinite;
     }
 
     @keyframes box-up {
         0% {
-            transform: translateY(0px);
+            transform: translate(calc(-50% - 475px), calc(-50% + 40px));
         }
         50% {
-            transform: translateY(10px);
+            transform: translate(calc(-50% - 475px), calc(-50% + 30px));
         }
         100% {
-            transform: translateY(0px);
+            transform: translate(calc(-50% - 475px), calc(-50% + 40px));
         }
     }
 
